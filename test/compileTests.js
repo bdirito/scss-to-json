@@ -22,7 +22,7 @@ describe('Compile', function() {
     cssminStub = sinon.stub().returns(minifiedWrapped);
 
     Compile = proxyquire('../src/compile', {
-      'node-sass': nodeSassStub,
+      'sass': nodeSassStub,
       'cssmin': cssminStub
     });
   });
